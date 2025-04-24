@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitClub - Start Your Transformation</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Google Fonts Link Here (e.g., Poppins, Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== Hero Section ===== -->
+    <header class="hero-section animate-on-scroll">
+        <div class="container hero-content">
+            <h1>Unlock Your Strongest Self</h1>
+            <p class="subtitle">Join FitClub and discover a personalized path to peak fitness with expert guidance and a supportive community.</p>
+            <a href="#booking" class="cta-button hero-button">Find Your Free Trial Slot</a>
+        </div>
+        <div class="hero-bg-overlay"></div>
+        <!-- Background image will be set via CSS -->
+    </header>
+
+    <main>
+        <!-- ===== Features Section ===== -->
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Why Choose FitClub?</h2>
+                <div class="features-grid">
+                    <div class="feature-item animate-on-scroll">
+                        <!-- Icon Placeholder -->
+                        <div class="feature-icon">[ICON: Trainer]</div>
+                        <h3>Expert Trainers</h3>
+                        <p>Certified professionals dedicated to your goals.</p>
+                    </div>
+                    <div class="feature-item animate-on-scroll">
+                        <!-- Icon Placeholder -->
+                        <div class="feature-icon">[ICON: Equipment]</div>
+                        <h3>Modern Equipment</h3>
+                        <p>State-of-the-art machines for every workout.</p>
+                    </div>
+                    <div class="feature-item animate-on-scroll">
+                        <!-- Icon Placeholder -->
+                        <div class="feature-icon">[ICON: Community]</div>
+                        <h3>Vibrant Community</h3>
+                        <p>Get motivated and stay accountable together.</p>
+                    </div>
+                     <div class="feature-item animate-on-scroll">
+                        <!-- Icon Placeholder -->
+                        <div class="feature-icon">[ICON: Classes]</div>
+                        <h3>Diverse Classes</h3>
+                        <p>From HIIT to Yoga, find classes you love.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Booking Section ===== -->
+        <section id="booking" class="booking-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Book Your Free 2-Hour Trial</h2>
+                <p class="section-subtitle animate-on-scroll">Select an available day below to see time slots.</p>
+                
+                <div id="day-selection-container" class="day-cards-container animate-on-scroll">
+                    <!-- Day Cards will be generated here by JS -->
+                    <p class="loading-message">Loading available days...</p>
+                </div>
+
+                <div id="timeslots-container" class="timeslots-container" style="display: none;"> <!-- Hidden initially -->
+                    <h3 id="timeslots-title">Available Times for [Selected Date]:</h3>
+                    <div id="timeslots-list" class="timeslots-list">
+                        <!-- Time slot buttons will be generated here by JS -->
+                    </div>
+                </div>
+
+                 <div class="confirmation-area animate-on-scroll">
+                    <p id="selection-summary">Please select a day and time slot.</p>
+                    <button id="confirm-booking-btn" class="cta-button" disabled>Confirm Booking</button>
+                 </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <h4>FitClub</h4>
+                    <p>123 Fitness Ave, Workout City, ST 98765</p>
+                    <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+                    <p>Email: <a href="mailto:info@fitclub.example">info@fitclub.example</a></p>
+                </div>
+                <div class="footer-socials">
+                    <h4>Follow Us</h4>
+                    <!-- Replace with actual icons/links -->
+                    <a href="#" aria-label="Facebook">[FB]</a>
+                    <a href="#" aria-label="Instagram">[IG]</a>
+                    <a href="#" aria-label="Twitter">[TW]</a>
+                </div>
+            </div>
+            <p class="footer-copy">&copy; <span id="current-year"></span> FitClub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html> 
